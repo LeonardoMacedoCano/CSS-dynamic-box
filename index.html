@@ -12,29 +12,43 @@
 </head>
 <body>
 	<header>
-		<h1>Caixa dinamica - CSS</h1>
-		<p>Caixa que altera dinamicamente suas propriedades ​​CSS</p>
+		<div class="container">
+			<h1>Caixa dinâmica</h1>
+			<h4>Caixa que altera dinamicamente suas propriedades ​​CSS.</h4>
+		</div>
 	</header>
 
 	<div id="principal">
-		<div id="propriedades">
-			<label for="altura">Altura</label>
-			<input type="range" name="altura" min="0" max="100" value="0">
-
-			<label for="largura">Largura</label>
-			<input type="range" name="largura" min="0" max="100" value="0">
-
-			<label for="cor">Cor</label>
-			<input type="color" name="cor" value="#000000">
+		<div class="container">
+			<div id="propriedades">
+				<div class="propTamanho">
+					<label for="altura">Altura</label>
+					<input type="range" name="altura" min="0" max="100" value="0">
+				</div>
+				<div class="propTamanho">
+					<label for="largura">Largura</label>
+					<input type="range" name="largura" min="0" max="100" value="0">
+				</div>
+				<div class="propCor">
+					<label for="cor">Cor</label>
+					<input type="color" name="cor" value="#000000">
+				</div>
+			</div>
 		</div>
 
-		<div id="caixaContainer">
-			<div id="caixa"></div>
+		<br><hr/>
+
+		<div class="container">
+			<div id="caixaContainer">
+				<div id="caixa"></div>
+			</div>
 		</div>
 	</div>
 
 	<footer>
-		<p>Desenvolvido por LCano.</p>
+		<div class="container">
+			<h4>Desenvolvido por LCano.</h4>
+		</div>
 	</footer>
 </body>
 </html>

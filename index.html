@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Caixa que altera dinamicamente suas propriedades ​​CSS">
+    <meta name="author" content="LCano">
+    <link rel="icon" href="">
+	<title>Caixa dinamica - CSS</title>
+</head>
+<body>
+	<header>
+		<h1>Caixa dinamica - CSS</h1>
+		<p>Caixa que altera dinamicamente suas propriedades ​​CSS</p>
+	</header>
+
+	<div id="principal">
+		<div id="propriedades">
+			<label for="altura">Altura</label>
+			<input type="range" name="altura" min="0" max="100" value="0">
+
+			<label for="largura">Largura</label>
+			<input type="range" name="largura" min="0" max="100" value="0">
+
+			<label for="cor">Cor</label>
+			<input type="color" name="cor" value="#000000">
+		</div>
+
+		<div id="caixaContainer">
+			<div id="caixa"></div>
+		</div>
+	</div>
+
+	<footer>
+		<p>Desenvolvido por LCano.</p>
+	</footer>
+</body>
+</html>

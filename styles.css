@@ -46,10 +46,18 @@ input[type="color"]{
     width: 50px;
 }
 
+:root {
+  	--color: #000;
+  	--heigth: 100px;
+  	--raduius: 0%;
+  	--width: 100px;
+}
+
 #propriedades{
 	margin: auto;
 	color: #ddd;
-	padding: 20px 20px 40px 20px;
+	height: 60px;
+	padding: 20px;
 	background-color: #111;
 	border-bottom: 1px solid #000;
 }
@@ -67,16 +75,25 @@ input[type="color"]{
 	margin: 0 auto;
 }
 
-.propTamanho{
-	width: 37.5%;
+.propCaixa{
+	width: 50%;
 	margin: auto;
 	float: left;
 	margin-bottom: 20px;
 }
 
-.propColor{
-	width: 25%;
+#caixaContainer{
 	margin: auto;
-	float: left;
-	margin-bottom: 20px;
+  	height: 500px;
+  	width: 500px;
+  	margin-bottom: 40px;
+}
+
+.caixa{
+	margin: auto;
+	background: var(--color);
+  	border-radius: var(--radius);
+  	width: var(--width);
+  	height: calc(500px / (100 / var(--height)));
+  	transition: background-color 2s,width 2s, height 2s, border-radius 2s;
 }

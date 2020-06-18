@@ -20,24 +20,28 @@
 
 	<div id="propriedades">
 		<div class="container">
-			<div class="propTamanho">
+			<div class="propCaixa">
 				<label for="altura">Altura</label>
-				<input type="range" name="altura" min="0" max="100" value="0">
+				<input type="range" name="altura" min="0" max="100" value="0" onchange="alterarValor('height', this.value)">
 			</div>
-			<div class="propTamanho">
+			<div class="propCaixa">
 				<label for="largura">Largura</label>
-				<input type="range" name="largura" min="0" max="100" value="0">
+				<input type="range" name="largura" min="0" max="100" value="0" onchange="alterarValor('width', this.value)">
 			</div>
-			<div class="propColor">
+			<div class="propCaixa">
+				<label for="radius">Raio</label>
+				<input type="range" name="radius" id="radius" min="0" max="50" value="0" oninput="alterarValor('radius', this.value)">
+			</div>
+			<div class="propCaixa">
 				<label for="cor">Cor</label>
-				<input type="color" name="cor" value="#000000">
+				<input type="color" name="cor" value="#000000" onchange="alterarValor('color', this.value)">
 			</div>
 		</div>
 	</div>
 
 	<div id="principal"  class="container">
 		<div id="caixaContainer">
-			<div id="caixa"></div>
+			<div id="caixa" class="caixa"></div>
 		</div>
 	</div>
 
@@ -46,5 +50,7 @@
 			<h4>Desenvolvido por LCano.</h4>
 		</div>
 	</footer>
+
+	<script src="main.js"></script>
 </body>
 </html>

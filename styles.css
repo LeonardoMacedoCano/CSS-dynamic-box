@@ -105,6 +105,11 @@ i {
 	font-style: italic;
 }
 
+.info-text, .info-value{
+	width: 50%;
+	float: left;
+}
+
 .nav {
 	list-style: none;
 	padding: 0;

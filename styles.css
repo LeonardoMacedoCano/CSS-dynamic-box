@@ -16,15 +16,25 @@ label{
 	max-width: 40%;
 }
 
-input{
-    width: 150px;
-    max-width: 40%;
-    margin-left: 5px;
-    padding-right: 1%;
+input, select{
+	margin: auto;
+	width: calc(100% - 20px);
 }
 
-input[type="color"]{
-    width: 150px;
+select {
+	text-align: center;
+	background-color: #000;
+	color: white;
+	border: none;
+	font-size: 1.1em;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+	-webkit-appearance: button;
+	appearance: button;
+	outline: none;
+}
+
+select option {
+ 	padding: 30px;
 }
 
 i {

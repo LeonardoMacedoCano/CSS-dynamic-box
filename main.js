@@ -1,22 +1,42 @@
-//Tamanho
-document.documentElement.style.setProperty(`--height`, Math.floor(Math.random() * 100));
-document.documentElement.style.setProperty(`--width`, Math.floor(Math.random() * 100));
-//Raio Horizontal
-document.documentElement.style.setProperty(`--htl`, Math.floor(Math.random() * 100));
-document.documentElement.style.setProperty(`--htr`, Math.floor(Math.random() * 100));
-document.documentElement.style.setProperty(`--hbl`, Math.floor(Math.random() * 100));
-document.documentElement.style.setProperty(`--hbr`, Math.floor(Math.random() * 100));
-//Raio Vertical
-document.documentElement.style.setProperty(`--vtl`, Math.floor(Math.random() * 100));
-document.documentElement.style.setProperty(`--vtr`, Math.floor(Math.random() * 100));
-document.documentElement.style.setProperty(`--vbl`, Math.floor(Math.random() * 100));
-document.documentElement.style.setProperty(`--vbr`, Math.floor(Math.random() * 100));
-//Borda
-document.documentElement.style.setProperty(`--bt`, 0);
-document.documentElement.style.setProperty(`--be`, 'none');
-document.documentElement.style.setProperty(`--bc`, '#000000');
-//Cor
-document.documentElement.style.setProperty(`--color`, '#000000');
+const BE = {
+	0: 'none',
+	1: 'dotted',
+	2: 'dashed',
+	3: 'solid',
+	4: 'double',
+	5: 'groove',
+	6: 'ridge',
+	7: 'inset',
+	8: 'outset',
+}
+
+const CONFIG = {
+	//Tamanho
+	height: Math.floor(Math.random() * 100),
+	width: Math.floor(Math.random() * 100),
+	//Raio Horizontal
+	htl: Math.floor(Math.random() * 100),
+	htr: Math.floor(Math.random() * 100),
+	hbl: Math.floor(Math.random() * 100),
+	hbr: Math.floor(Math.random() * 100),
+	//Raio Vertical
+	vtl: Math.floor(Math.random() * 100),
+	vtr: Math.floor(Math.random() * 100),
+	vbl: Math.floor(Math.random() * 100),
+	vbr: Math.floor(Math.random() * 100),
+	//Borda
+	bt: Math.floor(Math.random() * 10),
+	be: BE[Math.floor(Math.random() * 8)],
+	bc: "#" + Math.floor(Math.random()*16777215).toString(16),
+	//Cor
+	color: "#" + Math.floor(Math.random()*16777215).toString(16),
+}
+
+//Loop para setar o valor de todas as variaveis
+for (const key of Object.keys(CONFIG)) {
+ 	document.documentElement.style.setProperty(`--${key}`, CONFIG[key]);
+ 	document.getElementById(key).value = CONFIG[key];
+}
 
 //Função alterar valor propriedades caixa
 function alterarValor(id, valor){

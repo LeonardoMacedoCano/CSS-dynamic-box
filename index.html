@@ -24,82 +24,138 @@
 			<li>
 				<div class="item-menu">Tamanho</div>
 				<div class="sub-item-menu">
-					<label for="altura">Altura</label>
-					<input type="range" name="altura" min="1" max="100" value="1" onchange="alterarValor('height', this.value)">
+					<div class="info-text">
+						<label for="altura">Altura</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="altura" min="1" max="100" value="1" onchange="alterarValor('height', this.value)">
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="largura">Largura</label>
-					<input type="range" name="largura" min="1" max="100" value="1" onchange="alterarValor('width', this.value)">
+					<div class="info-text">
+						<label for="largura">Largura</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="largura" min="1" max="100" value="1" onchange="alterarValor('width', this.value)">
+					</div>
 				</div>
 			</li>
 			<li>
 				<div class="item-menu">Raio Horizontal</div>
 				<div class="sub-item-menu">
-					<label for="htl">Top Left</label>
-					<input type="range" name="htl" min="0" max="100" value="0" oninput="alterarValor('htl', this.value)">
+					<div class="info-text">
+						<label for="htl">Top Left</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="htl" min="0" max="100" value="0" oninput="alterarValor('htl', this.value)">
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="htr">Top Right</label>
-					<input type="range" name="htr" min="0" max="100" value="0" oninput="alterarValor('htr', this.value)">
+					<div class="info-text">
+						<label for="htr">Top Right</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="htr" min="0" max="100" value="0" oninput="alterarValor('htr', this.value)">
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="hbl">Bottom Left</label>
-					<input type="range" name="hbl" min="0" max="100" value="0" oninput="alterarValor('hbl', this.value)">
+					<div class="info-text">
+						<label for="hbl">Bottom Left</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="hbl" min="0" max="100" value="0" oninput="alterarValor('hbl', this.value)">
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="hbr">Bottom Right</label>
-					<input type="range" name="hbr" min="0" max="100" value="0" oninput="alterarValor('hbr', this.value)">
+					<div class="info-text">
+						<label for="hbr">Bottom Right</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="hbr" min="0" max="100" value="0" oninput="alterarValor('hbr', this.value)">
+					</div>
 				</div>
 			</li>
 			<li>
 				<div class="item-menu">Raio Vertical</div>
 				<div class="sub-item-menu">
-					<label for="vtl">Top Left</label>
-					<input type="range" name="vtl" min="0" max="100" value="0" oninput="alterarValor('vtl', this.value)">
+					<div class="info-text">
+						<label for="vtl">Top Left</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="vtl" min="0" max="100" value="0" oninput="alterarValor('vtl', this.value)">
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="vtr">Top Right</label>
-					<input type="range" name="vtr" min="0" max="100" value="0" oninput="alterarValor('vtr', this.value)">
+					<div class="info-text">
+						<label for="vtr">Top Right</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="vtr" min="0" max="100" value="0" oninput="alterarValor('vtr', this.value)">
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="vbl">Bottom Left</label>
-					<input type="range" name="vbl" min="0" max="100" value="0" oninput="alterarValor('vbl', this.value)">
+					<div class="info-text">
+						<label for="vbl">Bottom Left</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="vbl" min="0" max="100" value="0" oninput="alterarValor('vbl', this.value)">
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="vbr">Bottom Right</label>
-					<input type="range" name="vbr" min="0" max="100" value="0" oninput="alterarValor('vbr', this.value)">
+					<div class="info-text">
+						<label for="vbr">Bottom Right</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="vbr" min="0" max="100" value="0" oninput="alterarValor('vbr', this.value)">
+					</div>
 				</div>
 			</li>
 			<li>
 				<div class="item-menu">Borda</div>
 				<div class="sub-item-menu">
-					<label for="bt">Tamanho</label>
-					<input type="range" name="bt" min="0" max="10" value="0" oninput="alterarValor('bt', this.value)">
+					<div class="info-text">
+						<label for="bt">Tamanho</label>
+					</div>
+					<div class="info-value">
+						<input type="range" name="bt" min="0" max="10" value="0" oninput="alterarValor('bt', this.value)">
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="be">Estilo</label>
-					<select name="be" oninput="alterarValor('be', this.value)">
-						<option value="none">none</option>
-						<option value="dotted">dotted</option>
-						<option value="dashed">dashed</option>
-						<option value="solid">solid</option>
-						<option value="double">double</option>
-						<option value="groove">groove</option>
-						<option value="ridge">ridge</option>
-						<option value="inset">inset</option>
-						<option value="outset">outset</option>
-					</select >
+					<div class="info-text">
+						<label for="be">Estilo</label>
+					</div>
+					<div class="info-value">
+						<select name="be" oninput="alterarValor('be', this.value)">
+							<option value="none">none</option>
+							<option value="dotted">dotted</option>
+							<option value="dashed">dashed</option>
+							<option value="solid">solid</option>
+							<option value="double">double</option>
+							<option value="groove">groove</option>
+							<option value="ridge">ridge</option>
+							<option value="inset">inset</option>
+							<option value="outset">outset</option>
+						</select >
+					</div>
 				</div>
 				<div class="sub-item-menu">
-					<label for="bc">Cor</label>
-					<input type="color" name="bc" value="#000000" onchange="alterarValor('bc', this.value)">
+					<div class="info-text">
+						<label for="bc">Cor</label>
+					</div>
+					<div class="info-value">
+						<input type="color" name="bc" value="#000000" onchange="alterarValor('bc', this.value)">
+					</div>
 				</div>
 			</li>
 			<li>
 				<div class="item-menu">Cor</div>
 				<div class="sub-item-menu">
-					<label for="cor">Cor</label>
-					<input type="color" name="cor" value="#000000" onchange="alterarValor('color', this.value)">
+					<div class="info-text">
+						<label for="cor">Cor</label>
+					</div>
+					<div class="info-value">
+						<input type="color" name="cor" value="#000000" onchange="alterarValor('color', this.value)">
+					</div>
 				</div>
 			</li>
 		</ul>

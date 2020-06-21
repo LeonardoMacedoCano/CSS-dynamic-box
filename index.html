@@ -28,7 +28,7 @@
 						<label for="altura">Altura</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="altura" min="1" max="100" value="1" onchange="alterarValor('height', this.value)">
+						<input type="range" id="height" name="altura" min="1" max="100" value="1" onchange="alterarValor('height', this.value)">
 					</div>
 				</div>
 				<div class="sub-item-menu">
@@ -36,7 +36,7 @@
 						<label for="largura">Largura</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="largura" min="1" max="100" value="1" onchange="alterarValor('width', this.value)">
+						<input type="range" id="width" name="largura" min="1" max="100" value="1" onchange="alterarValor('width', this.value)">
 					</div>
 				</div>
 			</li>
@@ -47,7 +47,7 @@
 						<label for="htl">Top Left</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="htl" min="0" max="100" value="0" oninput="alterarValor('htl', this.value)">
+						<input type="range" id="htl" name="htl" min="0" max="100" value="0" oninput="alterarValor('htl', this.value)">
 					</div>
 				</div>
 				<div class="sub-item-menu">
@@ -55,7 +55,7 @@
 						<label for="htr">Top Right</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="htr" min="0" max="100" value="0" oninput="alterarValor('htr', this.value)">
+						<input type="range" id="htr" name="htr" min="0" max="100" value="0" oninput="alterarValor('htr', this.value)">
 					</div>
 				</div>
 				<div class="sub-item-menu">
@@ -63,7 +63,7 @@
 						<label for="hbl">Bottom Left</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="hbl" min="0" max="100" value="0" oninput="alterarValor('hbl', this.value)">
+						<input type="range" id="hbl" name="hbl" min="0" max="100" value="0" oninput="alterarValor('hbl', this.value)">
 					</div>
 				</div>
 				<div class="sub-item-menu">
@@ -71,7 +71,7 @@
 						<label for="hbr">Bottom Right</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="hbr" min="0" max="100" value="0" oninput="alterarValor('hbr', this.value)">
+						<input type="range" id="hbr" name="hbr" min="0" max="100" value="0" oninput="alterarValor('hbr', this.value)">
 					</div>
 				</div>
 			</li>
@@ -82,7 +82,7 @@
 						<label for="vtl">Top Left</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="vtl" min="0" max="100" value="0" oninput="alterarValor('vtl', this.value)">
+						<input type="range" id="vtl" name="vtl" min="0" max="100" value="0" oninput="alterarValor('vtl', this.value)">
 					</div>
 				</div>
 				<div class="sub-item-menu">
@@ -90,7 +90,7 @@
 						<label for="vtr">Top Right</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="vtr" min="0" max="100" value="0" oninput="alterarValor('vtr', this.value)">
+						<input type="range" id="vtr" name="vtr" min="0" max="100" value="0" oninput="alterarValor('vtr', this.value)">
 					</div>
 				</div>
 				<div class="sub-item-menu">
@@ -98,7 +98,7 @@
 						<label for="vbl">Bottom Left</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="vbl" min="0" max="100" value="0" oninput="alterarValor('vbl', this.value)">
+						<input type="range" id="vbl" name="vbl" min="0" max="100" value="0" oninput="alterarValor('vbl', this.value)">
 					</div>
 				</div>
 				<div class="sub-item-menu">
@@ -106,7 +106,7 @@
 						<label for="vbr">Bottom Right</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="vbr" min="0" max="100" value="0" oninput="alterarValor('vbr', this.value)">
+						<input type="range" id="vbr" name="vbr" min="0" max="100" value="0" oninput="alterarValor('vbr', this.value)">
 					</div>
 				</div>
 			</li>
@@ -117,7 +117,7 @@
 						<label for="bt">Tamanho</label>
 					</div>
 					<div class="info-value">
-						<input type="range" name="bt" min="0" max="10" value="0" oninput="alterarValor('bt', this.value)">
+						<input type="range" id="bt" name="bt" min="0" max="10" value="0" oninput="alterarValor('bt', this.value)">
 					</div>
 				</div>
 				<div class="sub-item-menu">
@@ -125,7 +125,7 @@
 						<label for="be">Estilo</label>
 					</div>
 					<div class="info-value">
-						<select name="be" oninput="alterarValor('be', this.value)">
+						<select id="be" name="be" oninput="alterarValor('be', this.value)">
 							<option value="none">none</option>
 							<option value="dotted">dotted</option>
 							<option value="dashed">dashed</option>
@@ -143,7 +143,7 @@
 						<label for="bc">Cor</label>
 					</div>
 					<div class="info-value">
-						<input type="color" name="bc" value="#000000" onchange="alterarValor('bc', this.value)">
+						<input type="color" id="bc" name="bc" value="#000000" onchange="alterarValor('bc', this.value)">
 					</div>
 				</div>
 			</li>
@@ -154,7 +154,7 @@
 						<label for="cor">Cor</label>
 					</div>
 					<div class="info-value">
-						<input type="color" name="cor" value="#000000" onchange="alterarValor('color', this.value)">
+						<input type="color" id="color" name="cor" value="#000000" onchange="alterarValor('color', this.value)">
 					</div>
 				</div>
 			</li>

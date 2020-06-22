@@ -55,14 +55,9 @@ $('.open-menu-btn').on('click', function(){
 
 $(document).ready(function(e){
 	var windowHeight = window.innerHeight;
-
 	$('#navigation-menu').css('height', windowHeight + 'px');
-	$('#navigation-hover').css('height', windowHeight + 'px');
-	$('#navigation-hover').hide();
 
 	$(document).on('click', '#showMenu', function(){
-		$('#navigation-hover').show();
-
 		$('#navigation-menu').css('left', '0');
 
 		$('#showMenu, #hideMenu').css('left', '150px');
@@ -71,8 +66,6 @@ $(document).ready(function(e){
 	});
 
 	$(document).on('click', '#hideMenu', function(){
-		$('#navigation-hover').hide();
-
 		$('#navigation-menu').css('left', '-150px');
 
 		$('#showMenu, #hideMenu').css('left', '0');

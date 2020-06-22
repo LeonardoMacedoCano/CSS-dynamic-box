@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="https://leonardomacedocano.github.io/DynamicBox/">
-        <img src="img/demo.gif" width="600" height="400" />
+        <img src="img/demo.gif" width="700" height="400" />
     </a>
 </p>
 
